@@ -127,23 +127,35 @@ li {
   gap: 0.6rem;
   cursor: pointer;
   padding: 0.4rem;
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
 .header .menubarbtn span {
+  transition: all 0.5s ease-in-out;
   width: 2rem;
   height: 2.5px;
   background: linear-gradient(102.57deg, #0073c3, #4c9cd2 100%, #84b4d4 0);
 }
 .header .menubarbtn span:nth-child(2) {
+  transition: all 0.5s ease-in-out;
   width: 14px;
   margin-left: 4px;
 }
-.header .closenavbtn {
-  color: #ffffff;
-  font-size: 22px;
+.header .menubarbtn.active span:nth-child(2) {
+  transition: all 0.5s ease-in-out;
   display: none;
 }
-.header .closenavbtn.active {
-  display: block;
+.header .menubarbtn.active span:nth-child(1) {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  transform: rotate(130deg);
+  width: 22px;
+}
+.header .menubarbtn.active span:nth-child(3) {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  transform: rotate(50deg);
+  width: 22px;
 }
 .header .navbar {
   position: absolute;
@@ -612,7 +624,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
   z-index: 2;
 }
 .hero .swiper-slide-active figure {
@@ -765,7 +777,8 @@ li {
     position: relative;
   }
   .hero h2 {
-    font-size: 45px;
+    width: 50%;
+    font-size: 55px;
     font-weight: 400;
   }
   .hero .swiper-slide figure {
@@ -794,13 +807,13 @@ li {
   }
   .hero .swiper-custom-nav {
     position: absolute;
-    right: 11%;
+    right: 14%;
     z-index: 10;
     padding: 0 0.5rem;
   }
   .hero .playpause {
     position: absolute;
-    right: 12%;
+    right: 15%;
     bottom: 40%;
     z-index: 1;
   }

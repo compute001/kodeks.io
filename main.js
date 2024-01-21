@@ -1,7 +1,7 @@
 let dsb =new Swiper("#swiper-2", {
   slidesPerView: 1,
   centeredSlides: true,
-  spaceBetween: 120,
+  spaceBetween: 60,
   pagination: {
       el: ("#swiper-2 .swiper-custom-pagination"),
       clickable: true,
@@ -84,13 +84,15 @@ closebtn.forEach(function(item){
   })
 })
 
+
+//Navbar
 let menuopenclose = document.querySelector('.menubarbtn');
 let navbar=document.querySelector('.navbar');
-let closenavbtn=document.querySelector('.closenavbtn');
+// let closenavbtn=document.querySelector('.closenavbtn');
 
 menuopenclose.addEventListener('click',function(){
   navbar.classList.toggle('active');
-
+  menuopenclose.classList.toggle('active');
 
 })
 
