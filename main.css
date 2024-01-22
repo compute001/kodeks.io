@@ -1413,7 +1413,7 @@ li {
   }
   .footer .footmobiledesk {
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
     place-items: center;
     background-color: #000000;
     padding-block: 2rem;
@@ -1441,6 +1441,9 @@ li {
   .footer .footmobiledesk .links ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
+    .links ul li {
+        margin-left: 1.5rem;
+      }
 }/*# sourceMappingURL=main.css.map */
