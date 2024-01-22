@@ -34,6 +34,80 @@ let dsb =new Swiper("#swiper-2", {
 });
 
 
+// Second slider
+
+new Swiper("#swiper-3", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 30,
+  pagination: {
+      el: ("#swiper-2 .swiper-custom-pagination"),
+      clickable: true,
+      renderBullet: function (index, className) {
+      return `<div class=${className}>
+          <span class="number">${index + 1}</span>
+          <span class="line"></span>
+          </div>`;
+      }
+  },
+  autoplay: {
+    delay: 7000,
+  },
+  lazyLoading: true,
+  loop: true,
+  keyboard: {
+      enabled: true,
+  },
+  navigation: {
+      nextEl: "#nav-right",
+      prevEl: "#nav-left"
+  },
+  breakpoints: {
+      800: {
+          slidesPerView: 3.5,
+      },
+      
+    spaceBetween: 60,
+  }
+});
+
+new Swiper("#swiper-4", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 30,
+  pagination: {
+      el: ("#swiper-2 .swiper-custom-pagination"),
+      clickable: true,
+      renderBullet: function (index, className) {
+      return `<div class=${className}>
+          <span class="number">${index + 1}</span>
+          <span class="line"></span>
+          </div>`;
+      }
+  },
+  autoplay: {
+    delay: 7000,
+  },
+  lazyLoading: true,
+  loop: true,
+  keyboard: {
+      enabled: true,
+  },
+  navigation: {
+      nextEl: "#nav-right",
+      prevEl: "#nav-left"
+  },
+  breakpoints: {
+      800: {
+          slidesPerView: 5,
+      },
+      
+    spaceBetween: 60,
+  }
+});
+
+
+
 const pauseBtn=document.querySelector('.pause');
 const playBtn=document.querySelector('.play');
 pauseBtn.addEventListener('click', function(){
