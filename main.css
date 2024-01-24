@@ -111,14 +111,15 @@ li {
   color: #4c9cd2;
   font-size: 22px;
 }
-.header .logo p {
-  background: linear-gradient(76.9deg, #0073c3 27.2%, #4c9cd2 79.9%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0.22rem;
-}
+  .logo {
+    width: 150px;
+    height: 100px;
+    img {
+      height: 100%;
+
+      object-fit: contain;
+    }
+  }
 .header .menubarbtn {
   display: flex;
   align-items: center;
