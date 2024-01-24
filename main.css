@@ -981,9 +981,9 @@ li {
     color: #e6e6e6;
   }
 }
-.about {
+/* .about {
   background-color: #ffffff;
-}
+} */
 .about .aboutwrapper {
   position: relative;
 }
@@ -1238,7 +1238,7 @@ li {
   }
 }
 .whatwedo {
-  background-color: #ffffff !important;
+/*   background-color: #ffffff !important; */
   padding-bottom: 30rem;
   margin-bottom: 0;
 }
